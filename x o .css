@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #000;
+    --third-color: #db3e4d ;
+    --fourth-color:#5cd2c6;
+  }
+  
+  .dark{
+    --primary-color: #000;
+    --secondary-color: #edf2fc;
+    --third-color: #db3e4d ;
+    --fourth-color:#5cd2c6;
+  }
+body{
+    background: var(--primary-color);
+}
+
+.sec , .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    /* background: #9599a2; */
+    /* background: #324151; */
+    /* background: #052659; */
+    background: #273772;
+    padding: 20px 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 400px;
+    border-radius: 20px;
+    /* border: 3px solid var(--primary-color); */
+    font-size: 50px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#title .oo{
+    color: #db3e4d;
+    padding-right: 20px;
+}
+#title .xx{
+    color: #5cd2c6;
+    padding-right: 20px;
+}
+#title .game{
+    color: #fff;
+    padding-right: 20px;
+}
+
+
+.items{
+    /* background: var(--primary-color); */
+    /* border: var(--secondary-color) solid 2px; */
+    /* padding-top: 50px; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr); 
+    gap: 10px ;
+}
+
+
+.square{
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 130px;
+    font-size: 80px;
+    font-weight: 500;
+    border: var(--secondary-color) 1px solid;
+    /* color: var(--third-color); */
+    padding: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.square:hover{
+    background: var(--primary-color);
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: 400px;
+    padding: 20px ;
+    
+
+}
+.btn1{
+    background:#273772;
+    color:#fff;
+    padding: 10px;
+    border: var(--secondary-color) solid 2px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.btn2{
+    background:#273772;
+    color: #fff;
+    /* margin-left: 20px; */
+    padding: 10px;
+    border: var(--secondary-color) solid 2px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.btn3{
+    background:#273772;
+    color: #fff;
+    /* margin-left: 20px; */
+    padding: 10px;
+    border: var(--secondary-color) solid 2px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
