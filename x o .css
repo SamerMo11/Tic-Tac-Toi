@@ -20,23 +20,28 @@
 body{
     background: var(--primary-color);
 }
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .sec , .main{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
 }
 #title{
-    /* background: #9599a2; */
-    /* background: #324151; */
-    /* background: #052659; */
+
     background: #273772;
     padding: 20px 50px;
     margin-top: 20px;
     margin-bottom: 50px;
     width: 400px;
     border-radius: 20px;
-    /* border: 3px solid var(--primary-color); */
     font-size: 50px;
     font-weight: 500;
     display: flex;
@@ -58,9 +63,6 @@ body{
 
 
 .items{
-    /* background: var(--primary-color); */
-    /* border: var(--secondary-color) solid 2px; */
-    /* padding-top: 50px; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr); 
@@ -78,7 +80,6 @@ body{
     font-size: 80px;
     font-weight: 500;
     border: var(--secondary-color) 1px solid;
-    /* color: var(--third-color); */
     padding: auto;
     border-radius: 10px;
     cursor: pointer;
@@ -107,29 +108,41 @@ body{
     font-weight: 600;
     font-size: 20px;
     cursor: pointer;
+    margin: 20px auto;
     
 }
-.btn2{
-    background:#273772;
-    color: #fff;
-    /* margin-left: 20px; */
-    padding: 10px;
-    border: var(--secondary-color) solid 2px;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    cursor: pointer;
-    
-}
-.btn3{
-    background:#273772;
-    color: #fff;
-    /* margin-left: 20px; */
-    padding: 10px;
-    border: var(--secondary-color) solid 2px;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    cursor: pointer;
-    
+
+
+@media (max-width: 767px){
+    .main{
+        width: 100%;
+    }
+    #title{
+        padding: 20px 0px;
+        width: 90%;
+    }
+    .sec{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .items{
+    width: 90%;
+    grid-template-columns: calc((100% / 3) - (22px / 3)) calc((100% / 3) - (22px / 3)) calc((100% / 3) - (22px / 3));
+    grid-template-rows: calc((100% / 3) - 10px) calc((100% / 3) - 10px) calc((100% / 3) - 10px);
+    gap: 3px10px;
+    column-gap: 10px;
+    row-gap: 10px;
+    }
+    .square{
+        width: 100%;
+        height: 100px;
+    }
+    .btn1{
+        margin: 20px auto;
+    }
+
 }
