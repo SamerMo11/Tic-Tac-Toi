@@ -80,6 +80,7 @@ body{
     font-size: 80px;
     font-weight: 500;
     border: var(--secondary-color) 1px solid;
+    /* color: var(--third-color); */
     padding: auto;
     border-radius: 10px;
     cursor: pointer;
