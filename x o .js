@@ -66,7 +66,7 @@ function game(id){
         
         turn = 'o';
         title.innerHTML='O Turn';
-        // title.style.color=' #5cd2c6';
+        
     }
     else if ( turn === 'o' && element.innerHTML =='' ){
         element.innerHTML = 'O';
@@ -74,7 +74,7 @@ function game(id){
         
         turn = 'x';
         title.innerHTML='X Turn';
-        // title.style.color=' #db3e4d';
+        
         
     }
     winner()
@@ -82,23 +82,13 @@ function game(id){
 
 
 let btn1 = document.getElementById('reset')
-let btn2 = document.getElementById('light')
-let btn3 = document.getElementById('dark')
+
 
     btn1.onclick = function(){
         location.reload()
     }
 
-    btn2.addEventListener ('click', function(){
-
-        document.body.classList.remove('dark');
     
-    })
-    btn3.addEventListener ('click', function(){
-
-        document.body.classList.add('dark');
-    
-    })
 
 
 
